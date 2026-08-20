@@ -52,8 +52,10 @@
           <p class="artigo-autor">Por: Miguel W. da Fonseca<p> 
           <p>Boas vindas ao meu novo blog! Aqui vou compatilhar as vezes que a seleção braileira ganhou em copas e qual foi os placares da final e os jogadores que macaram gols</p>
         <script>   
-     <button>👍<span>10</span></button>
-          <button>👎<span>0</span></button>
+              <button>👍<span>10</span></button>
+          <button>👎<span>0</span></button>
+
+           <article>
 </script>
           </div> 
            </article>
@@ -121,13 +123,10 @@ Gols do Brasil: * Ronaldo Fenômeno (2)</p>
 <script>   
         const botoes = document.querySelectorAll("button");                                
     const botoes = document.querySelectorAll("button");
-
     botoes.forEach(function (botao) {
         let curtiu = false; 
-
         botao.addEventListener("click", function() { 
             let texto = botao.querySelector("span");
-
             if (curtiu === false) {
                 texto.textContent++; 
                 curtiu = true; 
