@@ -47,17 +47,14 @@
       <main>
           <article>
           <img src="escudo.png" alt="escudodaseleçãobrasileira"width="400">
-          <div>   
+          <div>
           <h2>Meu primeiro post</h2>
           <p class="artigo-autor">Por: Miguel W. da Fonseca<p> 
-          <p>Boas vindas ao meu novo blog! Aqui vou compatilhar as vezes que a seleção braileira ganhou em copas e qual foi os placares da final e os jogadores que macaram gols</p>
-        <script>   
-              <button>👍<span>10</span></button>
+          <p>Boas vindas ao meu novo blog! Aqui vou compatilhar as vezes que a seleção braileira ganhou em copas e qual foi os placares da final e os jogadores que macaram gols</p>  
+          <button>👍<span>10</span></button>
           <button>👎<span>0</span></button>
+          </div>   
            <article>
-</script>
-          </div> 
-           </article>
            <article>
            <img src="Gemini_Generated_Image_lpaosklpaosklpao.png" alt="Gemini_Generated_Image_lpaosklpaosklpao.png"width="400">
           <div>   
@@ -121,18 +118,19 @@ Gols do Brasil: * Ronaldo Fenômeno (2)</p>
       </main>
 </body>    
 <script>   
-        const botoes = document.querySelectorAll("button");                                
-    const botoes = document.querySelectorAll("button");
-    botoes.forEach(function (botao) {
+        const botoes = document.querySelectorAll("button");       
         let curtiu = false; 
+    botoes.forEach(function (botao) {
         botao.addEventListener("click", function() { 
-            let texto = botao.querySelector("span");
-            if (curtiu === false) {
-                texto.textContent++; 
-                curtiu = true; 
-            } else {
-                texto.textContent--; 
-                curtiu = false; 
+         function botaoClicado(){
+           console.log("fui clicado");
+             let texto = botao.querySelector("span");
+             if(curtiu === false){   
+             texto.textContent++;
+             curtiu = true;
+             } else{
+                 texto.textContent--;
+           curtiu = false;
             }
        }
      })
